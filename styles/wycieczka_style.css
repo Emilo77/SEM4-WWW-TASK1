@@ -8,26 +8,29 @@
 body {
   background-color: aliceblue;
   margin: 0;
+  display: block;
 }
 
 .first-par {
   display: flex;
-  margin: 5em 5em 0 5em;
+  margin: 5em 5em 0 7em;
   position: center;
 }
 .first-par .main-img-col1 {
-  width: 40em;
-  padding: 2em;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+.first-par .writing-section-col2 {
+  padding: 2em 4em 2em 4em;
+  height: auto;
+  width: 100em;
 }
 .first-par .paragraph-special {
-  font-size: x-large;
+  max-font-size: x-large;
   font-family: "Lato", sans-serif;
   color: var(--color-grey);
   padding: 0.5em 0 2em 0;
-}
-.first-par .writing-section-col2 {
-  width: 60em;
-  padding: 2em 4em 2em 4em;
 }
 .first-par h3 {
   font-size: 1.5em;
@@ -40,6 +43,11 @@ body {
   font-size: x-large;
   font-family: "Lato", sans-serif;
   color: var(--color-grey);
+}
+.first-par .text-section {
+  flex-direction: column;
+  width: 80%;
+  max-width: 600px;
 }
 
 h1 {
@@ -64,16 +72,15 @@ p, li {
 }
 
 ul {
-  list-style-type: unset;
+  list-style: "-  ";
 }
 
 .second-par {
   display: flex;
   flex-direction: column;
   margin-left: 5em;
-  margin-right: 50em;
-  position: center;
-  padding: 2em;
+  width: 80%;
+  max-width: 800px;
 }
 
 .small-text-section {

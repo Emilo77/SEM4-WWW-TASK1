@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  background-color: aliceblue;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  background: black;
+  padding: 1em;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5em 0 0;
+
+    .logo {
+      color: white;
+      padding: 0.8em;
+
+    }
+
+    ul {
+      display: flex;
+      width: 80em;
+
+      color: white;
+      justify-content: space-around;
+      font-size: 2em;
+      list-style: none;
+    }
+  }
+}
+
+.main-section {
+  margin: 2em;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+  .column1 {
+    width: 90em;
+
+
+  }
+
+  .small-section-trip {
+    display: flex;
+    width: 90em;
+    flex-direction: row;
+
+
+    .small-section-trip-no-button {
+      width: 90em;
+      display: flex;
+      flex-direction: row;
+
+
+      .small-image {
+
+        position: static;
+        min-width: 300px;
+        padding: 2em;
+
+      }
+
+      .small-text {
+        margin: 0;
+
+        h1 {
+          font-size: 5em;
+          margin: 0;
+        }
+
+        p {
+          font-size: 2em;
+
+        }
+      }
+    }
+
+
+    a {
+      font-size: 2em;
+
+      text-decoration: none;
+      margin-top: 6.5em;
+      margin-bottom: 0;
+      color: blue;
+    }
+
+  }
+
+
+  .column2 {
+    width: 20em;
+
+    min-width: 300px;
+
+    h2 {
+      font-size: 4em;
+      margin: 0;
+      padding-bottom: 0.6em;
+    }
+
+    .narrow-column2-context {
+      display: flex;
+      margin: 0;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      flex-direction: column;
+
+
+      h3 {
+        font-size: 2em;
+        margin: 0;
+      }
+
+      p {
+        font-size: 2em;
+        margin-left: 2em;
+      }
+
+      a {
+        text-decoration: none;
+        color: #565656;
+        padding: 1em;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+
+
+      .link {
+        font-size: 2em;
+        text-decoration: none;
+        color: #000000;
+        background-color: #919191;
+        padding: 1em 0 1em 0;
+        border-style: dashed;
+      }
+
+      .white {
+        background-color: #dcdcdc;
+        border-style: none;
+      }
+    }
+  }
+
+}
+
+footer {
+  background: #ffe45f;
+  padding: 1em;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+    ul {
+      display: flex;
+      width: 80em;
+
+      color: #000000;
+      justify-content: space-around;
+      font-size: 2em;
+      list-style: none;
+
+      li {
+
+      }
+    }
+  }
+}
+
