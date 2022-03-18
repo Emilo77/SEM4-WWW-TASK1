@@ -30,6 +30,11 @@ nav {
       font-size: 2em;
       list-style: none;
     }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 }
 
@@ -50,6 +55,7 @@ nav {
     display: flex;
     width: 90em;
     flex-direction: row;
+    padding-bottom: 2em;
 
 
     .small-section-trip-no-button {
@@ -62,7 +68,8 @@ nav {
 
         position: static;
         min-width: 300px;
-        padding: 2em;
+        margin: 2em 2em 2em 0;
+        border-style: double;
 
       }
 
@@ -139,13 +146,13 @@ nav {
         font-size: 2em;
         text-decoration: none;
         color: #000000;
-        background-color: #919191;
+        background-color: #b4b4b4;
         padding: 1em 0 1em 0;
         border-style: dashed;
       }
 
       .white {
-        background-color: #dcdcdc;
+        background-color: #efefef;
         border-style: none;
       }
     }

@@ -26,6 +26,10 @@ nav .nav-container ul {
   font-size: 2em;
   list-style: none;
 }
+nav .nav-container a {
+  text-decoration: none;
+  color: white;
+}
 
 .main-section {
   margin: 2em;
@@ -40,6 +44,7 @@ nav .nav-container ul {
   display: flex;
   width: 90em;
   flex-direction: row;
+  padding-bottom: 2em;
 }
 .main-section .small-section-trip .small-section-trip-no-button {
   width: 90em;
@@ -49,7 +54,8 @@ nav .nav-container ul {
 .main-section .small-section-trip .small-section-trip-no-button .small-image {
   position: static;
   min-width: 300px;
-  padding: 2em;
+  margin: 2em 2em 2em 0;
+  border-style: double;
 }
 .main-section .small-section-trip .small-section-trip-no-button .small-text {
   margin: 0;
@@ -105,12 +111,12 @@ nav .nav-container ul {
   font-size: 2em;
   text-decoration: none;
   color: #000000;
-  background-color: #919191;
+  background-color: #b4b4b4;
   padding: 1em 0 1em 0;
   border-style: dashed;
 }
 .main-section .column2 .links .white {
-  background-color: #dcdcdc;
+  background-color: #efefef;
   border-style: none;
 }
 
