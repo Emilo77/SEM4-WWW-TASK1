@@ -12,25 +12,25 @@ body {
 }
 
 .first-par {
-  display: flex;
   margin: 5em 5em 0 7em;
   position: center;
+}
+.first-par img {
+  float: right;
+  padding: 0 2em 0 2em;
+  height: auto;
+  width: 500px;
 }
 .first-par .main-img-col1 {
   max-width: 100%;
   height: auto;
   width: auto;
 }
-.first-par .writing-section-col2 {
-  padding: 2em 4em 2em 4em;
-  height: auto;
-  width: 100em;
-}
 .first-par .paragraph-special {
   max-font-size: x-large;
   font-family: "Lato", sans-serif;
   color: var(--color-grey);
-  padding: 0.5em 0 2em 0;
+  padding: 0.5em 0 0.3em 0;
 }
 .first-par h3 {
   font-size: 1.5em;

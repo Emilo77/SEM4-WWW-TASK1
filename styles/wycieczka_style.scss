@@ -14,7 +14,14 @@ body {
 
 .first-par {
 
-  display: flex;
+  img {
+    float: right;
+    padding: 0 2em 0 2em;
+    height: auto;
+    width: 500px;
+  }
+
+
   margin: 5em 5em 0 7em;
   position: center;
 
@@ -24,18 +31,11 @@ body {
     width: auto;
   }
 
-  .writing-section-col2 {
-    padding: 2em 4em 2em 4em;
-    height: auto;
-    width: 100em;
-  }
-
-
   .paragraph-special {
     max-font-size: x-large;
     font-family: 'Lato', sans-serif;
     color: var(--color-grey);
-    padding: 0.5em 0 2em 0;
+    padding: 0.5em 0 0.3em 0;
   }
 
   h3 {
