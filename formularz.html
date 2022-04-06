@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie6</title>
+    <link rel="stylesheet" href="styles/formularz.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+<nav>
+    <div class="nav-container">
+        <a href="https://github.com/Emilo77"><img class="logo" href="https://github.com/Emilo77" src="logo.png"
+                                                  alt="logo" style="width:150px"></a>
+        <ul>
+
+            <li><a href="link.html">Wycieczki lotnicze
+            </a></li>
+            <li><a href="link.html">Wycieczki autokarowe</a></li>
+            <li><a href="link.html">...</a></li>
+            <li><a href="link.html">Moje konto</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+<div class = form_and_array>
+    <form name ="first_form" class = form onsubmit="return validateForm()" method="post">
+
+        <p class = "form_title">Formularz wycieczki</p>
+
+        <label for="wycieczka">Wybierz wycieczkę:</label><br>
+        <select id="wycieczka" name="wycieczka">
+            <option value="szczyt">Szczyt wszystkiego</option>
+            <option value="morza">Dalekie morza</option>
+            <option value="miasto">Miasto</option>
+        </select><br>
+
+        <label for="imie">Imię:</label><br>
+        <input type="text" id="imie" name="imie" required><br>
+
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" id="nazwisko" name="nazwisko" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="data">Data:</label><br>
+        <input type="date" id="data" name="data"><br>
+
+        <label for="posilki">Posiłki w cenie</label><br>
+        <input type="checkbox" id="posilki" name="posilki"><br>
+
+        <input type="submit" class = "submit-button" id="submit" value ="Wyślij" name="submit"><br>
+
+    </form>
+
+
+    <table class="table">
+        <tr>
+            <th>Wycieczka</th>
+            <th>Cena</th>
+        </tr>
+        <tr>
+            <td>Szczyt wszystkiego</td>
+            <td>1500200900</td>
+        </tr>
+        <tr>
+            <td>Dalekie morza</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Miasto</td>
+            <td>588</td>
+        </tr>
+    </table>
+</div>
+
+
+<footer>
+    <div class="footer-container">
+        <ul>
+            <li href="link.html">Biuro podróży, 2022</li>
+            <li href="link.html">O firmie</li>
+            <li href="link.html">Polityka prywatności</li>
+            <li href="link.html">Kontakt</li>
+        </ul>
+    </div>
+</footer>
+
+<script type="module">
+    import {validateForm} from './modul.mjs';
+
+    validateForm();
+</script>
+
+</body>
+</html>
