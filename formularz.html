@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Zadanie6</title>
-    <link rel="stylesheet" href="styles/formularz.css">
+    <title>Formularz rezerwacji</title>
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/formularz.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
+
 <nav>
     <div class="nav-container">
         <a href="https://github.com/Emilo77"><img class="logo" href="https://github.com/Emilo77" src="logo.png"
@@ -23,58 +25,71 @@
     </div>
 </nav>
 
-<div class = form_and_array>
-    <form name ="first_form" class = form onsubmit="return validateForm()" method="post">
+<div class="form_and_array">
+    <div class=form>
+        <form id="form">
+            <label for="wycieczka">Wybierz wycieczkę:</label><br>
+            <select id="wycieczka" name="wycieczka">
+                <option value="szczyt">Szczyt wszystkiego</option>
+                <option value="morza">Dalekie morza</option>
+                <option value="miasto">Miasto</option>
+            </select><br>
+            <div class="form_title">
+                <label for="name">Imię:</label><br>
+                <input type="text" id="name"><br>
+                <div id="name-error"></div>
+            </div>
+            <div class="form_title">
+                <label for="surname">Nazwisko:</label><br>
+                <input type="text" id="surname"><br>
+                <div id="surname-error"></div>
+            </div>
+            <div class="form_title">
+                <label for="email">Adres email:</label><br>
+                <input type="email" id="email"><br>
+            </div>
+            <div class="form_title">
+                <label for="start-date">Data</label><br>
+                <input type="date" id="start-date"><br>
+            </div>
+            <input class="submit-button" type="submit" id="submit-button" value="Prześlij">
+        </form>
+    </div>
 
-        <p class = "form_title">Formularz wycieczki</p>
 
-        <label for="wycieczka">Wybierz wycieczkę:</label><br>
-        <select id="wycieczka" name="wycieczka">
-            <option value="szczyt">Szczyt wszystkiego</option>
-            <option value="morza">Dalekie morza</option>
-            <option value="miasto">Miasto</option>
-        </select><br>
-
-        <label for="imie">Imię:</label><br>
-        <input type="text" id="imie" name="imie" required><br>
-
-        <label for="nazwisko">Nazwisko:</label><br>
-        <input type="text" id="nazwisko" name="nazwisko" required><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-
-        <label for="data">Data:</label><br>
-        <input type="date" id="data" name="data"><br>
-
-        <label for="posilki">Posiłki w cenie</label><br>
-        <input type="checkbox" id="posilki" name="posilki"><br>
-
-        <input type="submit" class = "submit-button" id="submit" value ="Wyślij" name="submit"><br>
-
-    </form>
-
-
-    <table class="table">
-        <tr>
-            <th>Wycieczka</th>
-            <th>Cena</th>
-        </tr>
-        <tr>
-            <td>Szczyt wszystkiego</td>
-            <td>1500200900</td>
-        </tr>
-        <tr>
-            <td>Dalekie morza</td>
-            <td>23</td>
-        </tr>
-        <tr>
-            <td>Miasto</td>
-            <td>588</td>
-        </tr>
-    </table>
+    <div class=table>
+        <h2>Koszty wycieczki</h2>
+        <table class="tg">
+            <thead>
+            <tr>
+                <th class="tg-0lax"><b>Nazwa kosztu</b></th>
+                <th class="tg-0lax"><b>Cena</b></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="tg-0lax">Szczyt wszystkiego</td>
+                <td class="tg-0lax">3432413412 zł</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">Dalekie morza</td>
+                <td class="tg-0lax">1 zł</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">Miasto</td>
+                <td class="tg-0lax">233 zł</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <p id="modal-text" class="modal-text"></p>
+        <button id="modal-button" class="modal-button">OK</button>
+    </div>
+</div>
 
 <footer>
     <div class="footer-container">
@@ -86,12 +101,6 @@
         </ul>
     </div>
 </footer>
-
-<script type="module">
-    import {validateForm} from './modul.mjs';
-
-    validateForm();
-</script>
 
 </body>
 </html>
